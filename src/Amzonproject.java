@@ -65,7 +65,6 @@ System.setProperty("webdriver.chrome.driver", "chromedriver");
 		submit.click();
 		List<WebElement> results = driver.findElements(By.xpath("//*[@data-component-type='s-search-result']"));
 		System.out.println("Number of mobiles in the page:" +results.size());
-		
 		List<WebElement> textprint = driver.findElements(By.xpath("//h2[@ class=\"a-size-mini a-spacing-none a-color-base s-line-clamp-2\"]"));
 		
 		  for (WebElement result : textprint) {
